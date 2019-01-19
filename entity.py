@@ -1,3 +1,4 @@
+from GameOver import GameOver
 class Entity:
 
     def __init__(self, name, owner = None):
@@ -38,7 +39,7 @@ class Entity:
             if "key" in self.objects:
 
                 print(text + " и ключ как раз уже у Вас. Вперед в неизвестность!")
-                raise GameOver
+                raise GameOver()
 
             else:
 
